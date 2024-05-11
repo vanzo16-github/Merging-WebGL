@@ -7347,17 +7347,17 @@ BufferGeometry.prototype = Object.assign(Object.create(EventDispatcher.prototype
   clone: function () {
     /*
      // Handle primitives
-    	 const parameters = this.parameters;
-    	 if ( parameters !== undefined ) {
-    	 const values = [];
-    	 for ( const key in parameters ) {
-    	 values.push( parameters[ key ] );
-    	 }
-    	 const geometry = Object.create( this.constructor.prototype );
+    		 const parameters = this.parameters;
+    		 if ( parameters !== undefined ) {
+    		 const values = [];
+    		 for ( const key in parameters ) {
+    		 values.push( parameters[ key ] );
+    		 }
+    		 const geometry = Object.create( this.constructor.prototype );
      this.constructor.apply( geometry, values );
      return geometry;
-    	 }
-    	 return new this.constructor().copy( this );
+    		 }
+    		 return new this.constructor().copy( this );
      */
 
     return new BufferGeometry().copy(this);
@@ -29212,15 +29212,15 @@ class PointLightHelper extends Mesh {
     // TODO: delete this comment?
     const distanceGeometry = new THREE.IcosahedronBufferGeometry( 1, 2 );
     const distanceMaterial = new THREE.MeshBasicMaterial( { color: hexColor, fog: false, wireframe: true, opacity: 0.1, transparent: true } );
-    this.lightSphere = new THREE.Mesh( bulbGeometry, bulbMaterial );
+    	this.lightSphere = new THREE.Mesh( bulbGeometry, bulbMaterial );
     this.lightDistance = new THREE.Mesh( distanceGeometry, distanceMaterial );
-    const d = light.distance;
-    if ( d === 0.0 ) {
-    	this.lightDistance.visible = false;
-    } else {
-    	this.lightDistance.scale.set( d, d, d );
-    }
-    this.add( this.lightDistance );
+    	const d = light.distance;
+    	if ( d === 0.0 ) {
+    		this.lightDistance.visible = false;
+    	} else {
+    		this.lightDistance.scale.set( d, d, d );
+    	}
+    	this.add( this.lightDistance );
     */
   }
 
@@ -29237,12 +29237,12 @@ class PointLightHelper extends Mesh {
 
     /*
     const d = this.light.distance;
-    	if ( d === 0.0 ) {
-    		this.lightDistance.visible = false;
-    	} else {
-    		this.lightDistance.visible = true;
+    		if ( d === 0.0 ) {
+    			this.lightDistance.visible = false;
+    		} else {
+    			this.lightDistance.visible = true;
     	this.lightDistance.scale.set( d, d, d );
-    	}
+    		}
     */
   }
 }
@@ -29623,7 +29623,7 @@ class BoxHelper extends LineSegments {
     1/___0/|
     | 6__|_7
     2/___3/
-    	0: max.x, max.y, max.z
+    		0: max.x, max.y, max.z
     1: min.x, max.y, max.z
     2: min.x, min.y, max.z
     3: max.x, min.y, max.z
@@ -39216,7 +39216,7 @@ exports.default = Sketch;
 new Sketch({
   dom: document.getElementById('container')
 });
-},{"three":"node_modules/three/build/three.module.js","imagesloaded":"node_modules/imagesloaded/imagesloaded.js","gsap":"node_modules/gsap/index.js","fontfaceobserver":"node_modules/fontfaceobserver/fontfaceobserver.standalone.js","./scroll":"js/scroll.js","three/examples/jsm/controls/OrbitControls.js":"node_modules/three/examples/jsm/controls/OrbitControls.js","./shaders/fragment.glsl":"js/shaders/fragment.glsl","./shaders/vertex.glsl":"js/shaders/vertex.glsl","./shaders/noise.glsl":"js/shaders/noise.glsl","../img/ocean.jpg":"img/ocean.jpg","three/examples/jsm/postprocessing/EffectComposer.js":"node_modules/three/examples/jsm/postprocessing/EffectComposer.js","three/examples/jsm/postprocessing/RenderPass.js":"node_modules/three/examples/jsm/postprocessing/RenderPass.js","three/examples/jsm/postprocessing/ShaderPass.js":"node_modules/three/examples/jsm/postprocessing/ShaderPass.js","three/examples/jsm/postprocessing/UnrealBloomPass.js":"node_modules/three/examples/jsm/postprocessing/UnrealBloomPass.js"}],"C:/Users/vanzo/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"three":"node_modules/three/build/three.module.js","imagesloaded":"node_modules/imagesloaded/imagesloaded.js","gsap":"node_modules/gsap/index.js","fontfaceobserver":"node_modules/fontfaceobserver/fontfaceobserver.standalone.js","./scroll":"js/scroll.js","three/examples/jsm/controls/OrbitControls.js":"node_modules/three/examples/jsm/controls/OrbitControls.js","./shaders/fragment.glsl":"js/shaders/fragment.glsl","./shaders/vertex.glsl":"js/shaders/vertex.glsl","./shaders/noise.glsl":"js/shaders/noise.glsl","../img/ocean.jpg":"img/ocean.jpg","three/examples/jsm/postprocessing/EffectComposer.js":"node_modules/three/examples/jsm/postprocessing/EffectComposer.js","three/examples/jsm/postprocessing/RenderPass.js":"node_modules/three/examples/jsm/postprocessing/RenderPass.js","three/examples/jsm/postprocessing/ShaderPass.js":"node_modules/three/examples/jsm/postprocessing/ShaderPass.js","three/examples/jsm/postprocessing/UnrealBloomPass.js":"node_modules/three/examples/jsm/postprocessing/UnrealBloomPass.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -39241,7 +39241,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51048" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53787" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
@@ -39385,5 +39385,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/vanzo/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/app.js"], null)
+},{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/app.js"], null)
 //# sourceMappingURL=/app.c3f9f951.js.map
